@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="500.0" style="-fx-background-color: FAEBD7;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.hftm.trainingApp.presentation.KraftController">
+   <children>
+      <VBox prefHeight="850.0" prefWidth="500.0">
+         <padding>
+            <Insets bottom="15.0" left="40.0" right="40.0" top="25.0" />
+         </padding>
+         <children>
+            <Label prefHeight="32.0" prefWidth="548.0" text="Overview of your weight training">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Information">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="10.0" prefWidth="269.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="151.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Musclegroup:" />
+                  <Label text="Date:" GridPane.rowIndex="1" />
+                  <ChoiceBox fx:id="muscleChoice" maxWidth="150.0" prefWidth="150.0" GridPane.columnIndex="1" />
+                  <DatePicker fx:id="datePicker" maxWidth="150.0" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </GridPane>
+            <Label text="Exercises details">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <GridPane maxWidth="500.0" prefHeight="240.0" prefWidth="300.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="267.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="75.0" minWidth="0.0" prefWidth="75.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="75.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <children>
+                  <Label text="Choose your exercises:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="kg" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="sets" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="reps" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="exOne" prefWidth="150.0" GridPane.rowIndex="1" />
+                  <TextField fx:id="weightOne" maxWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="setsOne" maxWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="repsOne" maxWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <ChoiceBox fx:id="exTwo" prefWidth="150.0" GridPane.rowIndex="2" />
+                  <TextField fx:id="weightTwo" maxWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="setsTwo" maxWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="repsTwo" maxWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <ChoiceBox fx:id="exThree" prefWidth="150.0" GridPane.rowIndex="3" />
+                  <TextField fx:id="weightThree" maxWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="setsThree" maxWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="repsThree" maxWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <ChoiceBox fx:id="exFour" prefWidth="150.0" GridPane.rowIndex="4" />
+                  <TextField fx:id="weightFour" maxWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="setsFour" maxWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <TextField fx:id="repsFour" maxWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <ChoiceBox fx:id="exFive" prefWidth="150.0" GridPane.rowIndex="5" />
+                  <TextField fx:id="weightFive" maxWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="setsFive" maxWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <TextField fx:id="repsFive" maxWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <ChoiceBox fx:id="exSix" prefWidth="150.0" GridPane.rowIndex="6" />
+                  <TextField fx:id="weightSix" maxWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="setsSix" maxWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <TextField fx:id="repsSix" maxWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <ChoiceBox fx:id="exSeven" prefWidth="150.0" GridPane.rowIndex="7" />
+                  <TextField fx:id="weightSeven" maxWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="setsSeven" maxWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <TextField fx:id="repsSeven" maxWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+               </children>
+            </GridPane>
+            <Button fx:id="confirmButton" mnemonicParsing="false" onAction="#onConfirm" text="Confirm">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Label text="Training details">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Label>
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="10.0" prefWidth="269.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="151.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Actual Path" />
+                  <Label text="Name of the File" GridPane.rowIndex="1" />
+                  <Text fx:id="actualPath" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="145.205078125" GridPane.columnIndex="1" />
+                  <TextField fx:id="dataPath" maxWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <TextArea fx:id="showDetailsArea" maxHeight="182.0" maxWidth="500.0" prefHeight="182.0" prefWidth="330.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </TextArea>
+            <HBox prefHeight="42.0" prefWidth="420.0">
+               <children>
+                  <Button fx:id="loadButton" mnemonicParsing="false" onAction="#onLoad" prefHeight="25.0" prefWidth="70.0" text="Load">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="saveButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onSave" prefHeight="25.0" prefWidth="70.0" text="Save" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="15.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
