@@ -1,6 +1,8 @@
 # SportMe - training app
 
-The final project in object-oriented programming
+The final project in object-oriented programming. 
+
+In the future I will optimise this project with a database (MySQL). 
 
 ## Contents
   - [Contents](#contents)
